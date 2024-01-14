@@ -80,7 +80,7 @@ public class PaymentController {
 	        String verificationData = orderId + "|" + paymentId;
 
 	        // Use Razorpay's utility function to verify the signature
-	        boolean isValidSignature = Utils.verifySignature(verificationData, signature, "UlnLCUb8lRxvBKRyIYRYWrEO");
+	        boolean isValidSignature = Utils.verifySignature(verificationData, signature, "MaFJKH2dOPIBQmonJxfO8nnw");
 
 	        return isValidSignature;
 	    } catch (RazorpayException e) {
